@@ -139,6 +139,7 @@ body{
      object-fit: cover;
   
 }
+
 .overlay{
     position: absolute;
     top:180px;
@@ -178,6 +179,14 @@ body{
 }
 .gallery img{
     width: 100%;
+}
+.gallery img:hover{
+    border: 5px solid turquoise;
+    cursor: pointer;
+    border-radius: 10px;
+    padding:5px;
+    background-color: aliceblue;
+    
 }
 .gift_text{
     display: flex;
