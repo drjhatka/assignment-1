@@ -14,8 +14,9 @@ body{
 }
 
 .banner{
-    background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4) ), url(Images/banner.png); 
-    width: 100%;  
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7) ), url(Images/banner.png); 
+    width: 76%;  
+    margin: auto;
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -25,7 +26,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+    border-radius: 5px;
 
     
 }
@@ -72,7 +73,7 @@ body{
     
 }
 .event_container{
-    
+    font-family: "Inter", sans-serif;
     font-weight: bold;
     display: flex;
     justify-content: center;
@@ -81,8 +82,9 @@ body{
     background-image: linear-gradient(to right top, #a0e3da, #7fb09f, #add8bb, #b6d2ae, #bfcba3);
     width: 76%;
     margin: auto;
-    padding-bottom: 30px;
+    padding-bottom: 50px;
     border-radius: 5px;
+    padding-top: 50px;
 }
 .upcoming_container{
    
@@ -96,19 +98,24 @@ body{
     padding-top: 60px;
 }
 .mid_row img{
-    width: 90%;
-    border-radius: 50%;
-    border: 10px solid red;
+    width: 80%;
+    border-radius: 100%;
+    border: 20px solid red;
     padding: 10px;
 }
 .right_row{
     padding-top: 30px;
 
-    margin-left: 30px;
+    margin-left: 70px;
+}
+.holiday_container h1,h2{
+    margin: 0;
+    
 }
 .holiday_container{
     
     width: 76%;
+    padding-top: 50px;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -117,23 +124,25 @@ body{
 }
 .multi_image{
     position: relative;
-    
+    width: 76%;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    flex-direction: row; 
+    
 }
 .multi_image img{
-    width: 40%;
- 
+     width: 65%;
+     object-fit: cover;
+  
 }
 .overlay{
     position: absolute;
-    top:30;
-    left: 50;
-    width: 30%;
+    top:180px;
+    left: 270px;
+    width: 20% !important;
+    
 }
 .border_image{
-    width: 80%;
+    width: 100%;
     margin: auto;
 }
 .border_image img{
@@ -141,12 +150,22 @@ body{
     object-fit: cover;
 }
 .overlay2{
-   margin-bottom: -100px;
-   object-fit: cover;
+    position: absolute;
+    top:0px;
+    
+    right: 200px;
+    width: 100% !important;
+    
+   
+}
+.right_image{
+    position: relative;
+    left:50%;
+    object-fit: cover;
 }
 
 .gallery{
-    width: 66%;
+    width: 76%;
     margin: auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -157,13 +176,14 @@ body{
 }
 .gift_text{
     display: flex;
-    width: 67%;
+    width: 76%;
+    padding-top: 20px;
     flex-direction: column;
     margin: auto;
 }
 
 .newsletter_container{
-    width: 67%;
+    width: 76%;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -172,7 +192,9 @@ body{
     padding-top: 50px;
     background-color: rgb(237, 241, 231);
     padding-bottom: 50px;
-    border-radius: 5px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 2px;
+    margin-bottom: 30px;
 }
 .newsletter_container img{
     width: 10%;
@@ -199,6 +221,7 @@ body{
 
 footer{
     background-color: black;
+    border-radius: 10px;
     color: white;
     padding-left:50px;
     padding-right:50px;
